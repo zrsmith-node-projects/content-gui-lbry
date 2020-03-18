@@ -7,23 +7,24 @@
   <title>HTML Content Tool</title>
 </head>
 <body>
-  <h1>HTML Content Tool</h1>
+  <h1>HTML Formatter Tool</h1>
   <div id="myForm">
     <textarea class="consoleText" name="content" id="content" spellcheck="ture" placeholder="Type ..." cols="50" rows="4"></textarea>
     <label for="content_type">content type:</label>
-    <select class="greenBtn" name="content_type" id="content_type">
+    <select class="greenBut" name="content_type" id="content_type">
       <option value="paragraph">paragraph</option>
-      <option value="consoleText">console text</option>
+      <option value="console">console text</option>
       <option value="bordered">bordered</option>
-      <button class="greenBtn" id="addThat" onclick="addThis()" >add to code</button>
     </select>
+      <button class="greenBut" id="addThat" onclick="addThis()" >add to code</button>
+
   </div>
   <form action="/page" class="myForm" method="post">
     <h3>file name:</h3> <br>
     <input type="text" name='file' spellcheck="true" required>
     <h3>code preview:</h3>
-    <textarea name="myPage" id="myPage" cols="50" rows="10" type=""></textarea>
-    <input type="submit" class="greenBtn" id="type" value="'CreatePage'">
+    <textarea class='consoleText' name="myPage" id="myPage" cols="40" rows="10" type=""></textarea>
+    <input type="submit" class="greenBut" id="type" value='CreatePage'>
   </form>
   <script src="maker.js"></script>
   
